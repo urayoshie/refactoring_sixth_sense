@@ -15,7 +15,7 @@ class Character
     @hp = character_params[:hp]
   end
 
-  def calculation_hp(proceed_way)
+  def up_down_hp(proceed_way)
     # puts "#{proceed_way}"
     proceeded_way_hp = proceed_way[:additional_hp]
     proceeded_way_msg = proceed_way[:msg]

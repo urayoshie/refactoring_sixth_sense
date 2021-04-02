@@ -17,3 +17,4 @@ player = Player.new(character_params)
 player.show_characters
 player.choose_character(character_params)
 player.choose_way
+player.result

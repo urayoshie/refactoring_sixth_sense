@@ -15,10 +15,6 @@ class WayList
     end
   end
 
-  def show_name
-    way_message
-  end
-
   def pick_way(name)
     @lists[name.to_sym].sample
   end
