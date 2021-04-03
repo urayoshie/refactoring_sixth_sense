@@ -27,7 +27,7 @@ way_list.csv | A 道と B 道のデータ
 
 ```
 
-git clone https://github.com/urayoshie/sixth_sense.git
+git clone https://github.com/urayoshie/refactoring_sixth_sense.git
 cd sixth_sense
 ruby main.rb
 
