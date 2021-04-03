@@ -38,16 +38,6 @@ class Player
     game_explanation
   end
 
-  def choose_name
-    while true
-      print "aまたはbを入力 >"
-      selected_name = gets.chomp
-    break if selected_name == "a" || selected_name == "b"
-      error_way_message(selected_name)
-    end
-    selected_name
-  end
-
   def choose_way
 
     way_list = WayList.new("way_list.csv")
@@ -66,5 +56,17 @@ class Player
     elsif @chosen_character.hp == 0
       lost_message
     end
+  end
+
+  private
+
+  def choose_name
+    while true
+      print "aまたはbを入力 >"
+      selected_name = gets.chomp
+    break if selected_name == "a" || selected_name == "b"
+      error_way_message(selected_name)
+    end
+    selected_name
   end
 end
